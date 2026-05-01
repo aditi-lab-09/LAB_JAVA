@@ -8,7 +8,7 @@ public class TextAWT extends Frame {
         setSize(400, 300);
         setVisible(true);
 
-        // Close window
+
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 dispose();
@@ -16,10 +16,10 @@ public class TextAWT extends Frame {
         });
     }
 
-    // Paint method to display text
+
     public void paint(Graphics g) {
         g.setFont(new Font("Arial", Font.BOLD, 20));
-        g.drawString("Hello from AWT!", 100, 150);
+        g.drawString("Hello from AWT", 100, 150);
     }
 
     public static void main(String[] args) {
