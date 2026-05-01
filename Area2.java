@@ -1,4 +1,4 @@
-class Area {
+class Area2 {
 
     double calculateArea(double side) {
         return side * side;
@@ -16,7 +16,7 @@ class Area {
 public class area2 {
     public static void main(String[] args) {
 
-        Area a = new Area();
+        Area2 a = new Area2();
 
         System.out.println("Area of Square: " + a.calculateArea(5));
         System.out.println("Area of Rectangle: " + a.calculateArea(5, 10));
