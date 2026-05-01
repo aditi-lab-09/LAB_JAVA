@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
-// Interface
 interface Bank {
     void deposit(double amount);
     void withdraw(double amount);
     void display();
 }
 
-// Customer class
+
 class Customer {
     String name;
     int customerId;
@@ -21,7 +20,6 @@ class Customer {
     }
 }
 
-// Account class
 class Account {
     int accNo;
     double balance;
@@ -35,7 +33,6 @@ class Account {
     }
 }
 
-// BankSystem using multiple inheritance concept
 class BankSystem extends Customer implements Bank {
     Account acc = new Account();
 
@@ -59,7 +56,7 @@ class BankSystem extends Customer implements Bank {
     }
 
     public void display() {
-        System.out.println("\n--- Account Details ---");
+        System.out.println("\n Account Details");
         System.out.println("Name: " + name);
         System.out.println("Customer ID: " + customerId);
         System.out.println("Account No: " + acc.accNo);
@@ -67,7 +64,6 @@ class BankSystem extends Customer implements Bank {
     }
 }
 
-// Main class
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
