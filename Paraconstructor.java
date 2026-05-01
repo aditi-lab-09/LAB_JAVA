@@ -1,12 +1,12 @@
-public class paraconstructor {
+public class Paraconstructor {
 
     int num;
-    paraconstructor(int n) {
+    Paraconstructor(int n) {
         num = n;
         System.out.println("Number is: " + num);
     }
 
     public static void main(String[] args) {
-        paraconstructor obj = new paraconstructor(50);
+        Paraconstructor obj = new Paraconstructor(50);
     }
 }
