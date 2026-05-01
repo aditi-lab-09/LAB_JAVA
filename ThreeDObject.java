@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-// Abstract class
+
 abstract class ThreeDObject {
     abstract double wholeSurfaceArea();
     abstract double volume();
 }
 
-// Box
+
 class Box extends ThreeDObject {
     double l, b, h;
 
@@ -25,7 +25,7 @@ class Box extends ThreeDObject {
     }
 }
 
-// Cube
+
 class Cube extends ThreeDObject {
     double a;
 
@@ -42,7 +42,7 @@ class Cube extends ThreeDObject {
     }
 }
 
-// Cylinder
+
 class Cylinder extends ThreeDObject {
     double r, h;
 
@@ -60,7 +60,7 @@ class Cylinder extends ThreeDObject {
     }
 }
 
-// Cone
+
 class Cone extends ThreeDObject {
     double r, h;
 
@@ -70,7 +70,7 @@ class Cone extends ThreeDObject {
     }
 
     double wholeSurfaceArea() {
-        double l = Math.sqrt(r*r + h*h); // slant height
+        double l = Math.sqrt(r*r + h*h); 
         return Math.PI * r * (r + l);
     }
 
@@ -79,7 +79,6 @@ class Cone extends ThreeDObject {
     }
 }
 
-// Main class
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
