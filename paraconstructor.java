@@ -1,8 +1,6 @@
 public class paraconstructor {
 
     int num;
-
-    // Parameterized Constructor
     paraconstructor(int n) {
         num = n;
         System.out.println("Number is: " + num);
