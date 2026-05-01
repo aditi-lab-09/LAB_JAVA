@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Abstract class
+
 abstract class AbstractProduct {
     int product_id;
 
@@ -12,7 +12,6 @@ abstract class AbstractProduct {
     abstract void display();
 }
 
-// Travel Guide Book
 class TravelGuide extends AbstractProduct {
     String title;
     String author;
@@ -41,7 +40,6 @@ class TravelGuide extends AbstractProduct {
     }
 }
 
-// CD Class
 class CD extends AbstractProduct {
     String title;
     String artist;
@@ -70,18 +68,18 @@ class CD extends AbstractProduct {
     }
 }
 
-// Main class
+
 public class Main {
     public static void main(String[] args) {
 
         AbstractProduct p;
 
-        // Travel Guide
+ 
         p = new TravelGuide(101);
         p.input();
         p.display();
 
-        // CD
+   
         p = new CD(202);
         p.input();
         p.display();
