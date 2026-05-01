@@ -1,6 +1,5 @@
 import java.util.*;
 
-// Interface
 interface Department {
     String deptName = "CSE";
     String deptHead = "Dr. Sharma";
@@ -8,7 +7,6 @@ interface Department {
     void printDeptDetails();
 }
 
-// Hostel class
 class Hostel {
     String hostelName;
     String hostelLocation;
@@ -31,7 +29,6 @@ class Hostel {
     }
 }
 
-// Student class
 class Student extends Hostel implements Department {
     String studentName;
     int regdNo;
@@ -54,7 +51,7 @@ class Student extends Hostel implements Department {
     }
 
     void printData() {
-        System.out.println("\n--- Student Details ---");
+        System.out.println("\n Student Details ");
         System.out.println("Name: " + studentName);
         System.out.println("Regd No: " + regdNo);
         System.out.println("Elective: " + electiveSubject);
@@ -64,14 +61,12 @@ class Student extends Hostel implements Department {
         printDeptDetails();
     }
 
-    // Implement interface method
     public void printDeptDetails() {
         System.out.println("Department: " + deptName);
         System.out.println("Dept Head: " + deptHead);
     }
 }
 
-// Driver class
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -124,7 +119,7 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.println("Exiting...");
+                    System.out.println("Exiting");
                     break;
             }
 
