@@ -17,7 +17,7 @@ public class ConstructorOverloading {
     }
 
     public static void main(String[] args) {
-        ConstructorOverloading obj1 = new ConstructorOverloading("Akangkhita",20);
-        ConstructorOverloading obj2 = new ConstructorOverloading("Riya", 22);
+        ConstructorOverloading obj1 = new ConstructorOverloading("Aditi",20);
+        ConstructorOverloading obj2 = new ConstructorOverloading("Shan", 20);
     }
 }
