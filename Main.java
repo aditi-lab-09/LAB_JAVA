@@ -12,7 +12,7 @@ public class Main {
             System.out.print("Enter second integer: ");
             int b = sc.nextInt();
 
-            int result = a / b;  // risky line ⚠️
+            int result = a / b; 
 
             System.out.println("Result: " + result);
 
