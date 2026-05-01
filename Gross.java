@@ -1,11 +1,9 @@
 import java.util.Scanner;
 
-// Interface
 interface Gross {
     double calculateGross();
 }
 
-// Employee class
 class Employee {
     String name;
     int empId;
@@ -19,7 +17,6 @@ class Employee {
     }
 }
 
-// Salary class
 class Salary {
     double basic;
     double hra;
@@ -35,7 +32,6 @@ class Salary {
     }
 }
 
-// Combined class
 class PaySlip extends Employee implements Gross {
     Salary s = new Salary();
 
@@ -44,13 +40,13 @@ class PaySlip extends Employee implements Gross {
         s.getSalary(sc);
     }
 
-    // Implement interface method
+    
     public double calculateGross() {
         return s.basic + s.hra + s.da;
     }
 
     void display() {
-        System.out.println("\n--- Pay Slip ---");
+        System.out.println("\n Pay Slip");
         System.out.println("Name: " + name);
         System.out.println("Employee ID: " + empId);
         System.out.println("Basic: " + s.basic);
@@ -60,7 +56,6 @@ class PaySlip extends Employee implements Gross {
     }
 }
 
-// Main class
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
